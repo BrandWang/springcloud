@@ -1,0 +1,18 @@
+spring: 
+  application:
+    name: isb-boot-admin
+  boot:
+    admin:
+      url: http://localhost:8070
+  jackson:
+    serialization:
+      indent_output: true
+endpoints:
+  health:
+    sensitive: false
+info:
+  build:
+    artifact: isb-boot-admin
+    name: isb-boot-admin
+    description: 监控管理平台
+    version: 0.0.3-SNAPSHOT
