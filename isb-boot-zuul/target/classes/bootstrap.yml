@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://10.1.1.10:7070/eureka/
+server:
+  port: ${PORT:${SERVER_PORT:8082}}
+
