@@ -1,0 +1,22 @@
+server:
+  port: 9411
+  
+   
+zipkin:
+  storage:
+    type: mysql
+    
+spring:
+  application:
+    name: isb-boot-zipkin
+  profiles: 
+    active: mysql
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rds952kloa0o4wtxf727.mysql.rds.aliyuncs.com:3306/ju321boot
+    username: ju321demo
+    password: rj090123
+    initialize: true
+    continue-on-error: true
+  sleuth:
+    enabled: false
