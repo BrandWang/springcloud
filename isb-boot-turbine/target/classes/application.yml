@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: isb-boot-turbine
-turbine:
-  aggregator:
-    clusterConfig: ISB-CAL-ADAPTER-OUT
-  appConfig: isb-cal-adapter-out
-  clusterNameExpression: metadata['cluster']
