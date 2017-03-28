@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class SpringcloudClientApplication {
+public class SpringcloudDemoApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(SpringcloudClientApplication.class, args);
+		SpringApplication.run(SpringcloudDemoApplication.class, args);
 	}
 
 }
