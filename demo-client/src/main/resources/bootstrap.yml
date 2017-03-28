@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: test
+  cloud:
+    config:
+      label: trunk
+      uri: http://x.x.x.x:${config.port:8888}
