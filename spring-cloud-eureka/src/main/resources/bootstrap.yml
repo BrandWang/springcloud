@@ -1,0 +1,13 @@
+server:
+  port: 7070 
+eureka:
+  server: 
+    enableSelfPreservation: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7070/eureka/      
+endpoints:
+  shutdown:
+    enabled: true     
