@@ -1,0 +1,20 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: spring-cloud-zipkin
+  profiles: 
+    active: mysql
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/zipkin
+    username: zipkin
+    password: zipkin
+    initialize: true
+    continue-on-error: true
+zipkin:
+  storage:
+    type: mysql
+
+    
